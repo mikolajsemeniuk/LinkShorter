@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PGekkdQOtbsynkfiBxfevff5aqK8njkSEhpupv0Avw+hpsjIbHc28MineN7Fn6WHpMvlqm9BeOlfoFrdUjRsIQ==",
+  "dgSpecHash": "f4q46gwNf85+ALjhZDDyupWxSj1HUWNnsVqwnv+55qpl4r8mFStq4kUyRdYa2P57t7Pk0ITn34jyjxl4af9AZw==",
   "success": true,
-  "projectFilePath": "/Users/mikolajsemeniuk/Projects/assessment/server/server.csproj",
+  "projectFilePath": "/Users/mikolajsemeniuk/Projects/_assessment/Server/server.csproj",
   "expectedPackageFiles": [
     "/Users/mikolajsemeniuk/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

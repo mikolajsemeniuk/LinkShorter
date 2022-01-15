@@ -1,18 +1,18 @@
 using Microsoft.EntityFrameworkCore;
-using server.Data;
-using server.Interfaces;
-using server.Services;
+using Data;
+using Service.Interfaces;
+using Service.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<IUrlService, UrlService>();
 builder.Services.AddDbContext<DataContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), m => m.MigrationsAssembly("server"));
 });
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var myAngularPolicy = "myAngularPolicy";
 builder.Services.AddCors(options =>

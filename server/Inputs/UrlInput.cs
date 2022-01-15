@@ -5,5 +5,5 @@ namespace server.Inputs;
 public record struct UrlInput
 {
     [Required]
-    public string UrlName { get; set; }
+    public string Name { get; set; }
 }
